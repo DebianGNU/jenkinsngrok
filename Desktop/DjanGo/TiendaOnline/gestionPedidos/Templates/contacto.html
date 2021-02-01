@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Busqueda de contacto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+        <h1>Contactanos</h1>
+        <br>
+    <form action="/contacto/" method="POST">{% csrf_token %}
+    
+
+        <P>Asunto: <input type="text" name="asunto"></P>
+        <P>Email: <input type="text" name="email"></P>
+        <P>Mensaje: <textarea name="mensaje" id="" cols="30" rows="10"></textarea></P>
+        <input type="submit" value="Enviar">
+    </center>
+
+
+    </form>
+    
+    </body>
+</html>
